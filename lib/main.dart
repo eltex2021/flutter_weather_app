@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_weather_app/home_screen.dart';
+import 'package:flutter_weather_app/res/app_strings.dart';
+import 'package:flutter_weather_app/theme/color_theme.dart';
 import 'package:flutter_weather_app/weather_screen/bloc/weather_bloc.dart';
 
 import 'data/networks/repository.dart';
@@ -33,9 +35,12 @@ class MyApp extends StatelessWidget {
       create: (context) => WeatherBloc(repository: WeatherRepositoryImpl()),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter WeatherApp',
+        title: AppStrings.title,
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          appBarTheme: const AppBarTheme(
+            color: AppColors.lightFon2,
+          ),
         ),
         home: HomePage(),
       ),

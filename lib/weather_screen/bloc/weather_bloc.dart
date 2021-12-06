@@ -1,5 +1,7 @@
 import 'dart:async';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_weather_app/components/scaffold_messenger_snackbar.dart';
 import 'package:flutter_weather_app/data/networks/models/weather_model.dart';
 import 'package:flutter_weather_app/data/networks/models/weather_model2.dart';
 import 'package:flutter_weather_app/data/networks/repository.dart';
@@ -29,7 +31,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
         yield LoadingWeatherState(myWeather: weather);
       } catch (_) {
-        yield ErrorPostsState();
+        yield ErrorWeatherState();
         //print("Ошибка ErrorState");
       }
     }

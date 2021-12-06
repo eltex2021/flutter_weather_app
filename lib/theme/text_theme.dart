@@ -4,8 +4,8 @@ import 'color_theme.dart';
 
 abstract class AppTexsts {
   static const welcome = TextStyle(
-    color: AppColors.blueMain,
-    fontSize: 30,
+    color: AppColors.black,
+    fontSize: 40,
     letterSpacing: 0.5,
     height: 1.176,
     fontWeight: FontWeight.w700,
@@ -13,8 +13,8 @@ abstract class AppTexsts {
   );
 
   static const mainBlack15 = TextStyle(
-    color: Colors.black,
-    fontSize: 15,
+    color: AppColors.black,
+    fontSize: 18,
     letterSpacing: 0.5,
     height: 1.176,
     fontWeight: FontWeight.w400,
