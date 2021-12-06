@@ -1,6 +1,9 @@
 # flutter_weather_app
 
 A new Flutter application.
+![dUfDhqBa](https://user-images.githubusercontent.com/79207629/144840352-49741bbf-4d36-4fd1-a75c-2fe2ecf4c06f.png)
+![TCuy1WmB](https://user-images.githubusercontent.com/79207629/144840369-437d704b-83e0-4e14-8243-cf4845370762.png)
+
 
 ## Getting Started
 
