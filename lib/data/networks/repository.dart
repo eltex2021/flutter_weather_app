@@ -17,7 +17,7 @@ class WeatherRepositoryImpl implements WeatherRepository {
   @override
   Future<WeatherModel> getWeather(String city) async {
     final response = await http.get(Uri.parse(
-        "http://api.openweathermap.org/data/2.5/weather?q=${city}&&appid=772b8897f596755b3dac7bac53909f88&lang={lang}&units=${units}"));
+        "http://api.openweathermap.org/data/2.5/weather?q=${city}&&appid=.........................&lang={lang}&units=${units}"));
 
     if (response.statusCode == 200) {
       //print("тест 2 репозиторий");
