@@ -78,7 +78,7 @@ class WeatherScreen extends StatelessWidget {
             bottomRight: Radius.circular(20), bottomLeft: Radius.circular(20)),
       ),
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height / 2 - 150,
+      height: MediaQuery.of(context).size.height / 3,
       child: Column(
         children: [
           const SizedBox(
